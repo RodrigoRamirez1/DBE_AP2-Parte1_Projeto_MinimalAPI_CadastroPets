@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cadastroPets")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a35ec90baec691125b37eb03d0834425ee3ea79")]
 [assembly: System.Reflection.AssemblyProductAttribute("cadastroPets")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cadastroPets")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,144 @@
+opencollection: 1.0.0
+info:
+  name: CadastroPets
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http .\requisicoes_bruno\Requisições HTTP-CadastroPets.yml
+      hostname: ''
+      port: ''
+      auth:
+        username: ''
+        password: ''
+      bypassProxy: ''
+items:
+  - info:
+      name: Atualiza um pet
+      type: http
+      seq: 6
+    http:
+      method: PUT
+      url: http://localhost:5251/pets/1
+      body:
+        type: json
+        data: |-
+          {
+            "especie": "Cachorro",
+            "peso": 5.00,
+            "vivo": false
+          }
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: Busca um pet por ID
+      type: http
+      seq: 4
+    http:
+      method: GET
+      url: http://localhost:5251/pets/1
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: 'Cadastra um pet '
+      type: http
+      seq: 5
+    http:
+      method: POST
+      url: http://localhost:5251/pets
+      body:
+        type: json
+        data: |-
+          {
+            "id": 1,
+            "especie": "Cachorro",
+            "peso": 10.0,
+            "vivo": true
+          }
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: Lista pets vivos
+      type: http
+      seq: 8
+    http:
+      method: GET
+      url: http://localhost:5251/pets/vivo
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: Lista Todos os pets
+      type: http
+      seq: 3
+    http:
+      method: GET
+      url: http://localhost:5251/pets
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: Mensagem Inicial
+      type: http
+      seq: 1
+    http:
+      method: GET
+      url: http://localhost:5251/
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: Remove um pet
+      type: http
+      seq: 7
+    http:
+      method: DELETE
+      url: http://localhost:5251/pets/1
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+  - info:
+      name: Status da API
+      type: http
+      seq: 2
+    http:
+      method: GET
+      url: http://localhost:5251/status
+      auth: inherit
+    settings:
+      encodeUrl: true
+      timeout: 0
+      followRedirects: true
+      maxRedirects: 5
+bundled: true
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
+    exportedAt: '2026-05-20T16:18:25.877Z'
+    exportedUsing: Bruno
