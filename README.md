@@ -42,8 +42,8 @@ dotnet run
 }
 ```
 ### Arquivo com as requisições HTTP (Ferramenta BRUNO)
-- em ZIP: 
-- em YML: 
+- em ZIP: [Requisições HTTP - Cadastro Pets](https://github.com/RodrigoRamirez1/DBE_AP2-Parte1_Projeto_MinimalAPI_CadastroPets/blob/main/requisicoes_bruno/Requisi%C3%A7%C3%B5es%20HTTP_CadastroPets.zip)
+- em YML: [Requisições HTTP - Cadastro Pets](https://github.com/RodrigoRamirez1/DBE_AP2-Parte1_Projeto_MinimalAPI_CadastroPets/blob/main/requisicoes_bruno/Requisi%C3%A7%C3%B5es%20HTTP-CadastroPets.yml)
 
 ## Vídeo explicativo
 
